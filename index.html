@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Crust & Co. Artisan Bakery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #181512;
+            color: #fef3c7;
+        }
+
+        /* Navigation Header */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 22px 60px;
+            background-color: #110e0c;
+            border-bottom: 1px solid #2a241e;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ffffff;
+            letter-spacing: 1px;
+        }
+
+        .logo span {
+            color: #d97706;
+        }
+
+        nav a {
+            color: #b3a89b;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        nav a.active, nav a:hover {
+            color: #d97706;
+        }
+
+        /* Hero Banner */
+        .hero {
+            text-align: center;
+            padding: 90px 20px 70px;
+            background: linear-gradient(180deg, rgba(217, 119, 6, 0.12) 0%, rgba(24, 21, 18, 1) 100%);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(217, 119, 6, 0.2);
+            color: #d97706;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            border: 1px solid rgba(217, 119, 6, 0.3);
+        }
+
+        .hero h1 {
+            font-size: 46px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #d97706;
+        }
+
+        .hero p {
+            color: #a39688;
+            font-size: 15px;
+            max-width: 520px;
+            margin: 0 auto 35px;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #d97706;
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background-color: #b45309;
+        }
+
+        /* Section Title */
+        .section-header {
+            text-align: center;
+            margin: 40px 0 35px;
+        }
+
+        .section-header h2 {
+            font-size: 28px;
+            color: #ffffff;
+        }
+
+        .section-header h2 span {
+            color: #d97706;
+        }
+
+        .section-header p {
+            color: #a39688;
+            font-size: 13px;
+            margin-top: 8px;
+        }
+
+        /* Feature Cards Grid */
+        .cards-grid {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            padding: 0 40px 80px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: #231f1a;
+            border: 1px solid #332d26;
+            border-radius: 12px;
+            width: 330px;
+            overflow: hidden;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #d97706;
+        }
+
+        .card img {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 22px;
+        }
+
+        .card-body h3 {
+            font-size: 18px;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+
+        .card-body p {
+            color: #a39688;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 18px;
+        }
+
+        .card-action {
+            color: #d97706;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #73675a;
+            font-size: 13px;
+            border-top: 1px solid #2a241e;
+            background-color: #110e0c;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">CRUST<span>&amp;CO.</span></div>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="menu.html">Bakery Menu</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="badge">HANDCRAFTED DAILY</div>
+        <h1>Freshly Baked <span>Sourdough &amp; Pastries</span></h1>
+        <p>Experience the aroma of wild-yeast breads, flaky viennoiserie, and small-batch espresso crafted every morning[cite: 4].</p>
+        <a href="menu.html" class="btn">View Fresh Baked Menu</a>
+    </div>
+
+    <div class="section-header">
+        <h2>Bakery <span>Specialties</span></h2>
+        <p>Explore what comes fresh out of our stone oven daily.</p>
+    </div>
+
+    <div class="cards-grid">
+        <a href="menu.html" class="card">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Artisan Breads">
+            <div class="card-body">
+                <h3>Artisan Breads</h3>
+                <p>Naturally fermented sourdough loaves, ciabatta, and rustic French baguettes baked fresh at dawn[cite: 4].</p>
+                <div class="card-action">Browse Breads &rarr;</div>
+            </div>
+        </a>
+
+        <a href="menu.html" class="card">
+            <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80" alt="French Pastries">
+            <div class="card-body">
+                <h3>French Pastries</h3>
+                <p>Golden butter croissants, pain au chocolat, and seasonal fruit tarts made with real butter.</p>
+                <div class="card-action">Browse Pastries &rarr;</div>
+            </div>
+        </a>
+
+        <a href="menu.html" class="card">
+            <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Specialty Coffee">
+            <div class="card-body">
+                <h3>Specialty Coffee</h3>
+                <p>Single-origin espresso brews paired perfectly with sweet and savory baked treats.</p>
+                <div class="card-action">Browse Drinks &rarr;</div>
+            </div>
+        </a>
+    </div>
+
+    <footer>
+        &copy; 2026 Crust &amp; Co. Artisan Bakery | All Rights Reserved
+    </footer>
+
+</body>
+</html>
